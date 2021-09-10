@@ -1,4 +1,3 @@
-
 current_year = 2021
 class Person:
     '''Doctring'''
@@ -11,22 +10,21 @@ class Person:
         self.language = kwargs.get('language')
         self.year = current_year - self.__birth_year
 
-
     def get_age(self):
         self.year = current_year - self.__birth_year
         if self.year > 0:
-            print(f'Ваш возраст {self.year}')
+            print(f'Your age {self.year}')
         else:
-            print(f'Ваш возраст {self.year}')
+            print(f'Your age {self.year}')
 
     def birthday(self, birth_year):
         self.__birth_year = birth_year
         if birth_year > current_year:
-            print("Слишком большая дата,мы не из будущего чел.ТЫ ЧЕЕЕ?!")
+            print("Man, are you seriously? we are not future")
         elif birth_year < 2004:
-            print("Вам есть 18. Вы можете пить, курить сколько захотите:)")
+            print("You have 18. You can smoking and driking for many time, while your liver not died:)")
         elif birth_year > 2004:
-            print("Вы еще недоросли")
+            print("You haven't 18 now")
 
     def get_name(self):
         return self.__name
